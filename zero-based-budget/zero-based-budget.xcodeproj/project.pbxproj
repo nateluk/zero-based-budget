@@ -11,6 +11,12 @@
 		B0B0B9302922FD3D00815B97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B0B92F2922FD3D00815B97 /* ContentView.swift */; };
 		B0B0B9322922FD3F00815B97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0B0B9312922FD3F00815B97 /* Assets.xcassets */; };
 		B0B0B9352922FD3F00815B97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0B0B9342922FD3F00815B97 /* Preview Assets.xcassets */; };
+		B0B0B94029236A1600815B97 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = B0B0B93F29236A1600815B97 /* Apollo */; };
+		B0B0B94329236AAD00815B97 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = B0B0B94229236AAD00815B97 /* schema.json */; };
+		B0B0B9462923BB1D00815B97 /* get_accounts.graphql in Resources */ = {isa = PBXBuildFile; fileRef = B0B0B9452923BB1D00815B97 /* get_accounts.graphql */; };
+		B0B0B9482923BE5900815B97 /* GetAccountsQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B0B9472923BE5900815B97 /* GetAccountsQuery.graphql.swift */; };
+		B0B0B9662923BE7700815B97 /* ZeroBasedBudgetSPM in Resources */ = {isa = PBXBuildFile; fileRef = B0B0B9652923BE7700815B97 /* ZeroBasedBudgetSPM */; };
+		B0B0B9692923BEBC00815B97 /* ZeroBasedBudget in Frameworks */ = {isa = PBXBuildFile; productRef = B0B0B9682923BEBC00815B97 /* ZeroBasedBudget */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,10 @@
 		B0B0B92F2922FD3D00815B97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B0B0B9312922FD3F00815B97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0B0B9342922FD3F00815B97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B0B0B94229236AAD00815B97 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		B0B0B9452923BB1D00815B97 /* get_accounts.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = get_accounts.graphql; sourceTree = "<group>"; };
+		B0B0B9472923BE5900815B97 /* GetAccountsQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAccountsQuery.graphql.swift; sourceTree = "<group>"; };
+		B0B0B9652923BE7700815B97 /* ZeroBasedBudgetSPM */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ZeroBasedBudgetSPM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0B0B94029236A1600815B97 /* Apollo in Frameworks */,
+				B0B0B9692923BEBC00815B97 /* ZeroBasedBudget in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +47,11 @@
 		B0B0B9212922FD3D00815B97 = {
 			isa = PBXGroup;
 			children = (
+				B0B0B9652923BE7700815B97 /* ZeroBasedBudgetSPM */,
+				B0B0B94129236A2A00815B97 /* Graphql */,
 				B0B0B92C2922FD3D00815B97 /* Views */,
 				B0B0B92B2922FD3D00815B97 /* Products */,
+				B0B0B9672923BEBC00815B97 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,31 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		B0B0B94129236A2A00815B97 /* Graphql */ = {
+			isa = PBXGroup;
+			children = (
+				B0B0B9442923BB0500815B97 /* Queries */,
+				B0B0B94229236AAD00815B97 /* schema.json */,
+			);
+			path = Graphql;
+			sourceTree = "<group>";
+		};
+		B0B0B9442923BB0500815B97 /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+				B0B0B9472923BE5900815B97 /* GetAccountsQuery.graphql.swift */,
+				B0B0B9452923BB1D00815B97 /* get_accounts.graphql */,
+			);
+			path = Queries;
+			sourceTree = "<group>";
+		};
+		B0B0B9672923BEBC00815B97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +123,10 @@
 			dependencies = (
 			);
 			name = "zero-based-budget";
+			packageProductDependencies = (
+				B0B0B93F29236A1600815B97 /* Apollo */,
+				B0B0B9682923BEBC00815B97 /* ZeroBasedBudget */,
+			);
 			productName = "zero-based-budget";
 			productReference = B0B0B92A2922FD3D00815B97 /* zero-based-budget.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +155,9 @@
 				Base,
 			);
 			mainGroup = B0B0B9212922FD3D00815B97;
+			packageReferences = (
+				B0B0B93E29236A1600815B97 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
 			productRefGroup = B0B0B92B2922FD3D00815B97 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,7 +172,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0B0B9462923BB1D00815B97 /* get_accounts.graphql in Resources */,
 				B0B0B9352922FD3F00815B97 /* Preview Assets.xcassets in Resources */,
+				B0B0B94329236AAD00815B97 /* schema.json in Resources */,
+				B0B0B9662923BE7700815B97 /* ZeroBasedBudgetSPM in Resources */,
 				B0B0B9322922FD3F00815B97 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0B0B9482923BE5900815B97 /* GetAccountsQuery.graphql.swift in Sources */,
 				B0B0B9302922FD3D00815B97 /* ContentView.swift in Sources */,
 				B0B0B92E2922FD3D00815B97 /* zero_based_budgetApp.swift in Sources */,
 			);
@@ -337,6 +388,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B0B0B93E29236A1600815B97 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B0B0B93F29236A1600815B97 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B0B0B93E29236A1600815B97 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		B0B0B9682923BEBC00815B97 /* ZeroBasedBudget */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ZeroBasedBudget;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B0B0B9222922FD3D00815B97 /* Project object */;
 }

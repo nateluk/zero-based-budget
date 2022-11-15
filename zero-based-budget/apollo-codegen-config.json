@@ -1,0 +1,36 @@
+{
+  "schemaName": "ZeroBasedBudget",
+  "input": {
+    "operationSearchPaths": ["./Graphql/**/*.graphql"],
+    "schemaSearchPaths": ["./Graphql/**/*.json"]
+  },
+  "output": {
+    "testMocks": {
+      "none": {}
+    },
+    "schemaTypes": {
+      "path": "./ZeroBasedBudgetSPM",
+      "moduleType": {
+        "swiftPackageManager": {}
+      }
+    },
+    "operations": {
+      "relative": {}
+    }
+  },
+  "schemaDownloadConfiguration": {
+    "downloadMethod": {
+      "introspection": {
+        "endpointURL": "http://localhost:8080/v1/graphql",
+        "httpMethod": {
+          "POST": {}
+        },
+        "includeDeprecatedInputValues": false,
+        "outputFormat": "JSON"
+      }
+    },
+    "downloadTimeout": 60,
+    "headers": [],
+    "outputPath": "./Graphql/schema.json"
+  }
+}
