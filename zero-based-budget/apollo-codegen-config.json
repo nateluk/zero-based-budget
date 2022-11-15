@@ -15,7 +15,9 @@
       }
     },
     "operations": {
-      "relative": {}
+      "relative": {
+        "subpath": "./OperationFiles"
+      }
     }
   },
   "schemaDownloadConfiguration": {
